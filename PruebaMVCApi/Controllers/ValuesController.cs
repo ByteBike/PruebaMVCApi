@@ -21,18 +21,23 @@ namespace PruebaMVCApi.Controllers
         //}
 
 
-        
-       //[AcceptVerbs("GET")]
-       //[HttpGet]
-        public string Get(int id)
+
+        //[AcceptVerbs("GET")]
+        //[HttpGet]
+        // usage http://localhost:50697/api/values/get
+        public string Get()
         {
             List<Pc> pcs = new List<Pc>();
             Disco disco1 = new Disco();
             Disco disco2 = new Disco();
+            disco1.Capacidad = 500;
+            disco2.Capacidad = 250;
+            disco1.Tipo = "Hard Disk";
+            disco2.Tipo = "Solid State";
 
-            pcs.Add(new Pc { Procesador = "Intel I5", Memoria = 8, Disco = disco1 });
-            pcs.Add(new Pc { Procesador = "Intel I7", Memoria = 16, Disco = disco2 });
-            pcs.Add(new Pc { Procesador = "AMD XX", Memoria = 24, Disco = disco1 });
+            pcs.Add(new Pc { Id = 1, Procesador = "Intel I5", Memoria = 8, Disco = disco1 });
+            pcs.Add(new Pc { Id = 1, Procesador = "Intel I7", Memoria = 16, Disco = disco2 });
+            pcs.Add(new Pc { Id = 1, Procesador = "AMD XX", Memoria = 24, Disco = disco1 });
             var resultado = pcs.Where(s => s.Memoria > 8);
             //string datapath = Path.Combine(HttpContext.Request.PhysicalApplicationPath, @"App_Data\PcInfoFile.xml");
             //Repositorio rep = new Repositorio();
