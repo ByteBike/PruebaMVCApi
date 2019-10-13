@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PCList>
+  <Computador>
+    <Id>1</Id>
+    <Cpu>Intel</Cpu>
+    <Memoria>8</Memoria>
+    <disco>
+      <Tipo>Hard Disk</Tipo>
+      <Capacidad>500</Capacidad>
+    </disco>
+  </Computador>
+  <Computador>
+    <Id>2</Id>
+    <Cpu>Intel</Cpu>
+    <Memoria>16</Memoria>
+    <disco>
+      <Tipo>Hard Disk</Tipo>
+      <Capacidad>1000</Capacidad>
+    </disco>
+  </Computador>
+  <Computador>
+    <Id>3</Id>
+    <Cpu>AMD</Cpu>
+    <Memoria>12</Memoria>
+    <disco>
+      <Tipo>Solid State</Tipo>
+      <Capacidad>250</Capacidad>
+    </disco>
+  </Computador>
+</PCList>
